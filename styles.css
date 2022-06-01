@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "titulares";
+    src: url('fonts/PPMonumentExtended-Light.otf');
+}
+
+@font-face {
+    font-family: "texto";
+    src: url('fonts/NeueMachina-Light.otf');
+}
+
+/*Header*/
+header {
+    height: 12rem;
+    /*original es 20vh;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(46, 0, 139);
+}
+
+/*nav{  /*original no estaba nav*/
+/*display: flex;
+}*/
+
+ul {
+    list-style-type: none;
+    /*sin puntitos*/
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+ul li {
+    margin: 1.8rem;
+    /*original es 7rem*/
+    display: flex;
+    /*original no estaba*/
+}
+
+a {
+    /*display: flex; /*original no estaba dispaly*/
+    text-decoration: none;
+    color: white;
+    /*text-transform: uppercase; arreglado con TXT mayuscula VER ESPECIFICIDAD */
+    font-size: 1.5rem;
+    font-family: "titulares";
+}
+
+.imagenlogo {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    margin-left: 2rem;
+}
+
+/*Pie de Pagina*/
+footer {
+    display: flex;
+    background-color: rgb(187, 188, 188);
+    color: rgb(58, 58, 58);
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+div a {
+    color: rgb(58, 58, 58);
+    padding: .5rem;
+}
+
+#piecontacto1 {
+    color: rgb(58, 58, 58);
+    font-size: 1.5rem;
+    margin: .5rem;
+
+}
+
+#piecontacto2 {
+    color: rgb(58, 58, 58);
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    margin: .5rem;
+}
+
+#pieterminos p {
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+#pieterminos a {
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+#pieredes {
+    color: rgb(58, 58, 58);
+    padding: .5rem;
+}
+
+/*Inicio*/
+#fotoytexto {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    text-justify: auto;
+    align-items: center;
+}
+
+#imagenindex {
+    width: 50rem;
+    height: 25rem;
+    padding: 1rem;
+    background-color: beige;
+}
+
+#parrafoindex {
+    display: grid;
+    width: 60rem;
+    height: 25rem;
+    padding: 2rem;
+    text-align: center;
+    text-align: justify;
+    font-family: "texto";
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+#parrafoindex1 {
+    font-family: "texto";
+    font-size: 2rem;
+}
+
+#fotoytexto1 {
+    /*original no estaba fotoytexto1*/
+    display: grid;
+    /*flex-direction: column;*/
+    text-justify: auto;
+    align-items: center;
+}
+
+#video1 {
+    display: flex;
+    width: 30vw;
+    /*original es 50vw;*/
+    height: 30vh;
+    /*original es 50vh;*/
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-family: "titulares";
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: "titulares";
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-family: "texto";
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+/*Nosotros*/
+#fotoytexto2 {
+    display: grid;
+    margin: 1rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    text-justify: auto;
+    align-items: start;
+    text-align: justify;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#imagennos {
+    margin-top: 2rem;
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+}
+
+/*Servicios*/
+#fotoytexto3 {
+    margin-top: 1rem;
+    margin-left: 5rem;
+    text-justify: auto;
+    align-items: center;
+}
+
+#servicioslogo {
+    display: grid;
+    margin: 1rem;
+    padding: 1rem;
+    text-justify: auto;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+div img {
+    margin-top: 1rem;
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+}
+
+#transicion {
+    color: white;
+    font-size: 3rem;
+}
+
+#transicion:hover {
+    color: black;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-delay: 0.1s;
+}
+
+@keyframes animacionkey {
+    from {
+        opacity: 0.25;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#anim {
+    margin: 0.0005rem;
+    animation: animacionkey 3s linear infinite alternate;
+}
+
+
+/*Contacto*/
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+iframe {
+    width: 50rem;
+    height: 50rem;
+}
+
+form {
+    width: 75rem;
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    font-family: "texto";
+    font-size: 2rem;
+
+}
+
+input {
+    font-family: "texto";
+    font-size: 2rem;
+}
+
+#nombre {
+    box-sizing: content-box;
+    width: 90%;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    border-color: rgb(187, 188, 188);
+}
+
+#mail {
+    box-sizing: content-box;
+    width: 90%;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    border-color: rgb(187, 188, 188);
+}
+
+select {
+    box-sizing: content-box;
+    width: 90%;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    border-color: rgb(187, 188, 188);
+    font-family: "texto";
+    font-size: 2rem;
+}
+
+option {
+    font-size: 2rem;
+    color: grey;
+}
+
+textarea {
+    box-sizing: content-box;
+    width: 90%;
+    height: 15rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    border-color: rgb(187, 188, 188);
+    font-family: "texto";
+    font-size: 2rem;
+}
+
+#boton {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    border-color: rgb(187, 188, 188);
+}
+
+#boton1 {
+    margin-top: 0.5rem;
+    }
+
+#textocontacto {
+    font-size: 1rem;
+}
+#warning {
+    font-size: 1.5rem;
+    color: red;
+}

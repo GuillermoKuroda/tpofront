@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Omgoing-para-icono.ico">
+    <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="idheader">
+
+    </header>
+
+    <main>
+        <h1>Estamos en contacto</h1>
+        <section>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402340.05036141805!2d-57.880695115493666!3d-38.01721305792303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1652933374527!5m2!1ses-419!2sar"
+                frameborder="0">
+            </iframe>
+            <form id="formulario" action="https://formspree.io/f/xvoldnzg" method="POST">
+                <!--endpoint formspree de GK"-->
+                <p>Nombre*</p>
+                <label>
+                    <input id="nombre" type="text" name="Nombre_Apellido" placeholder="Ingrese su nombre">
+                    <!--¿sacar required? duplica validacion JS-->
+                </label>
+                <p>e-mail*</p>
+                <label>
+                    <input id="mail" type="email" name="Email" placeholder="Ingrese su e-mail" required>
+                    <!--¿sacar required? duplica validacion JS (formato txt@txt)-->
+                </label>
+                <p>Seleccione su provincia*</p>
+                <select id="provincia" required>
+                    <!--¿sacar required? duplica validacion JS-->
+                    <option selected>--Elija su provincia--</option>
+                    <option value="ba">Buenos Aires</option>
+                    <option value="caba">Ciudad Autonoma Bs As.</option>
+                    <option value="cat">Catamarca</option>
+                    <option value="cha">Chaco</option>
+                    <option value="chu">Chubut</option>
+                    <option value="cor">Córdoba</option>
+                    <option value="Cor">Corrientes</option>
+                    <option value="er">Entre Ríos</option>
+                    <option value="for">Formosa</option>
+                    <option value="ju">Jujuy</option>
+                    <option value="lp">La Pampa</option>
+                    <option value="lr">La Rioja</option>
+                    <option value="men">Mendoza</option>
+                    <option value="mi">Misiones</option>
+                    <option value="neu">Neuquen</option>
+                    <option value="rn">Rio Negro</option>
+                    <option value="sal">Salta</option>
+                    <option value="sj">San Juan</option>
+                    <option value="sl">San Luis</option>
+                    <option value="sc">Santa Cruz</option>
+                    <option value="sf">Santa Fé</option>
+                    <option value="sde">Santiago del Estero</option>
+                    <option value="tdf">Tierra del Fuego</option>
+                    <option value="tuc">Tucumán</option>
+                </select>
+                <p>Mensaje*</p>
+                <label>
+                    <textarea id="textolibre" name="Mensaje" cols="30" rows="10" placeholder="Su comentario"></textarea>
+                    <!--¿sacar required? duplica validacion JS-->
+                </label>
+                <p id="textocontacto">* Obligatorio</p>
+                <div id="boton">
+                    <input id="boton1" type="reset" value="Restablecer">
+                    <input id="boton1" type="submit" value="Enviar">
+                    <p id="warning"></p>
+                </div>
+
+
+            </form>
+        </section>
+    </main>
+    <footer id="idfooter">
+    </footer>
+    <script src="js/script.js"></script>
+    <!--<script src="js/contacto.js"></script>-->
+</body>
+
+</html>
